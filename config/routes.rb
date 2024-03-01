@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root "main#/index"
+
   get 'main/index'
   get 'users/index'
   get 'users/new'

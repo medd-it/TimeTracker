@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root "main#/index"
 
+  match 'about', to: "main#about", via: :get
+
   get 'main/index'
   get 'users/index'
   get 'users/new'

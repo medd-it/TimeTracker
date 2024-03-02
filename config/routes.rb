@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
-  get 'timesheets/index'
-  get 'timesheets/show'
-  get 'timesheets/new'
-  get 'timesheets/edit'
-  get 'timesheets/delete'
+
   get 'main/index'
 
   root "main#index"
 
   match 'about', to: "main#about", via: :get
+
+  get 'users/index'
+  get 'users/show'
+  get 'users/new'
+  get 'users/edit'
+  get 'users/delete'
 
   get 'projects/index'
   get 'projects/show'
@@ -16,11 +18,12 @@ Rails.application.routes.draw do
   get 'projects/edit'
   get 'projects/delete'
 
-  get 'users/index'
-  get 'users/show'
-  get 'users/new'
-  get 'users/edit'
-  get 'users/delete'
+  get 'timesheets/index'
+  get 'timesheets/show'
+  get 'timesheets/new'
+  get 'timesheets/edit'
+  get 'timesheets/delete'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

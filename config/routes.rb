@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'timesheets/index'
+  get 'timesheets/show'
+  get 'timesheets/new'
+  get 'timesheets/edit'
+  get 'timesheets/delete'
   get 'main/index'
 
   root "main#index"

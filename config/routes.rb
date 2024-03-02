@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'projects/index'
+  get 'projects/show'
+  get 'projects/new'
+  get 'projects/edit'
+  get 'projects/delete'
 
   root "main#index"
 

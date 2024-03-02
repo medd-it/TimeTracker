@@ -1,16 +1,18 @@
 Rails.application.routes.draw do
+  get 'main/index'
+
+  root "main#index"
+
+  match 'about', to: "main#about", via: :get
+
   get 'projects/index'
   get 'projects/show'
   get 'projects/new'
   get 'projects/edit'
   get 'projects/delete'
 
-  root "main#index"
-
-  match 'about', to: "main#about", via: :get
-
-  get 'main/index'
   get 'users/index'
+  get 'users/show'
   get 'users/new'
   get 'users/edit'
   get 'users/delete'

@@ -6,20 +6,7 @@ Rails.application.routes.draw do
 
   match 'about', to: "main#about", via: :get
 
-  get 'users/index'
-  get 'users/show'
-  get 'users/new'
-  get 'users/edit'
-
-  get 'projects/index'
-  get 'projects/show'
-  get 'projects/new'
-  get 'projects/edit'
-
-  get 'timesheets/index'
-  get 'timesheets/show'
-  get 'timesheets/new'
-  get 'timesheets/edit'
+  resources :users, :projects, :timesheets
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

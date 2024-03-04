@@ -1,2 +1,34 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<%=  link_to('Back to List', users_path) %><br>
+
+<div>
+  <h2>Show User</h2>
+
+  <div>
+    <%= link_to('Edit', edit_user_path(@user.id)) %>
+    <%= link_to('Delete', '#') %>
+  </div>
+
+  <table>
+    <tr>
+      <th>E-Mail</th>
+      <td><%= @user.e_mail %></td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td><%= @user.name %></td>
+    </tr>
+    <tr>
+      <th>Surname</th>
+      <td><%= @user.surname %></td>
+    </tr>
+    <tr>
+      <th>Start date</th>
+      <td><%= @user.start_date %></td>
+    </tr>
+    <tr>
+      <th>End date</th>
+      <td><%= @user.end_date %></td>
+    </tr>
+  </table>
+
+</div>

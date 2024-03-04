@@ -10,19 +10,16 @@ Rails.application.routes.draw do
   get 'users/show'
   get 'users/new'
   get 'users/edit'
-  get 'users/delete'
 
   get 'projects/index'
   get 'projects/show'
   get 'projects/new'
   get 'projects/edit'
-  get 'projects/delete'
 
   get 'timesheets/index'
   get 'timesheets/show'
   get 'timesheets/new'
   get 'timesheets/edit'
-  get 'timesheets/delete'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

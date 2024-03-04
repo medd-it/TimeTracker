@@ -24,7 +24,7 @@
       <td>
         <%= link_to('Show', user_path(user.id)) %>
         <%= link_to('Edit', edit_user_path(user.id)) %>
-        <%= link_to('Delete', '#') %>
+        <%= link_to('Delete', delete_user_path(user.id)) %>
       </td>
     </tr>
     <% end %>

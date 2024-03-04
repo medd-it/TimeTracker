@@ -6,7 +6,13 @@ Rails.application.routes.draw do
 
   match 'about', to: "main#about", via: :get
 
-  resources :users, :projects, :timesheets
+  resources :projects, :timesheets
+
+  resources :users do
+    member do
+      get :delete
+    end
+  end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

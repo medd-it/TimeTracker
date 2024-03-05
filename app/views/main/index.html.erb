@@ -1,4 +1,14 @@
+<% if flash[:notice].present? %>
+<div>
+  <%= flash[:notice] %>
+</div>
+<% end %>
+
 <h1>Time Tracker</h1>
+
+<p>User: <%= @username %></p>
+<%= button_to('Logout', logout_path, {method: :delete}) %>
+
 <p>This in an application for managing time sheets</p>
 
 <%= link_to('Users', users_path) %><br>

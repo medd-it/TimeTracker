@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   match 'about', to: "main#about", via: :get
 
+  get 'login' => 'access#new'
+  delete 'logout' => 'access#destroy'
+  resource :access, controller: 'access', only: [:new, :create, :destroy]
+
   resources :projects, :timesheets
 
   resources :users do

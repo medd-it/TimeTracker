@@ -1,0 +1,21 @@
+<div>
+  <h2>Welcome</h2>
+
+  <%= form_tag(access_path) do %>
+    <table>
+      <tr>
+        <th><%= label_tag(:username) %></th>
+        <td><%= text_field_tag(:username, params[:username]) %></td>
+      </tr>
+      <tr>
+        <th><%= label_tag(:password) %></th>
+        <td><%= password_field_tag(:password) %></td>
+      </tr>
+    </table>
+
+    <div>
+      <%= submit_tag("Log In") %>
+    </div>
+
+  <% end %>
+</div>

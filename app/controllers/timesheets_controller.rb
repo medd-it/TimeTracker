@@ -21,9 +21,16 @@ class TimesheetsController < ApplicationController
   end
 
   def edit
+    @timesheet = Timesheet.find(params[:id])
   end
 
   def update
+    @timesheet = Timesheet.find(params[:id])
+    if @timesheet.update(timesheet_params)
+      redirect_to timesheet_path(@timesheet.id)
+    else
+      render('edit')
+    end
   end
 
   def delete

@@ -1,2 +1,12 @@
-<h1>Timesheets#edit</h1>
-<p>Find me in app/views/timesheets/edit.html.erb</p>
+<div>
+  <h2>Edit Timesheet</h2>
+
+  <%= form_for(@timesheet) do |f| %>
+    <%= render(partial: 'form', locals: {f: f}) %>
+
+    <div>
+      <%= f.submit('Edit Timesheet') %>
+    </div>
+  <% end %>
+
+</div>

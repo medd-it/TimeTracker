@@ -1,0 +1,31 @@
+header {
+    height: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: #AAAAAA;
+}
+
+header span {
+    float: right;
+}
+
+header span .button_to {
+    display: inline;
+}
+
+div#content {
+    min-height: 400px;
+}
+
+div#flash-notice {
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    padding: 10px;
+}
+
+footer {
+    height: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    background: #AAAAAA;
+}

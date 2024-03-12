@@ -1,5 +1,6 @@
 class TimesheetsController < ApplicationController
   def index
+    @timesheets = Timesheet.order(:user_id, :start)
   end
 
   def show

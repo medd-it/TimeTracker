@@ -10,9 +10,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'access#destroy'
   resource :access, controller: 'access', only: [:new, :create, :destroy]
 
-  resources :projects, :timesheets
-
-  resources :users do
+  resources :users, :projects, :timesheets do
     member do
       get :delete
     end

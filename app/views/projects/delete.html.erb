@@ -1,0 +1,13 @@
+<div>
+  <h2>Delete Project</h2>
+
+  <%= form_for(@project, method: 'delete') do |f| %>
+    <p>Are you sure you want to permanently delete this project?</p>
+    <p><%= @project.code %></p>
+
+    <div>
+      <%= f.submit('Delete Project') %>
+    </div>
+  <% end %>
+
+</div>

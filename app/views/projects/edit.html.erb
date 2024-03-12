@@ -1,2 +1,12 @@
-<h1>Projects#edit</h1>
-<p>Find me in app/views/projects/edit.html.erb</p>
+<div>
+  <h2>Edit Prohect</h2>
+
+  <%= form_for(@project) do |f| %>
+    <%= render(partial: 'form', locals: {f: f}) %>
+
+    <div>
+      <%= f.submit('Edit Project') %>
+    </div>
+  <% end %>
+
+</div>

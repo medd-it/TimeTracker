@@ -11,7 +11,9 @@
   </head>
 
   <header>
-    Time Tracker
+    <%= link_to(root_path) do %>
+      <%= image_tag('logo.png', height: 25, alt: 'Time Tracker') %>
+    <% end %>
     <% if session[:user_id].present? %>
         <span>
           User: <%= @username %> | <%= button_to('Logout', logout_path, {method: :delete}) %>

@@ -2,7 +2,6 @@ header {
     height: 1em;
     padding: 1em;
     margin-bottom: 1em;
-    background: #AAAAAA;
 }
 
 header span {
@@ -14,12 +13,14 @@ header span .button_to {
 }
 
 div#content {
+    background: #EBF1F4;
     min-height: 400px;
+    margin: 1em;
 }
 
 div#flash-notice {
-    border: 1px solid darkgreen;
-    color: darkgreen;
+    border: 1px solid #286847;
+    color: #286847;
     padding: 10px;
 }
 
@@ -27,5 +28,4 @@ footer {
     height: 1em;
     padding: 1em;
     margin-top: 1em;
-    background: #AAAAAA;
 }

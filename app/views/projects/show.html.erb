@@ -1,2 +1,28 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<div>
+  <h2>Show Project</h2>
+
+  <div>
+    <%= link_to('Edit', edit_project_path(@project.id)) %>
+    <%= link_to('Delete', delete_project_path(@project.id)) %>
+  </div>
+
+  <table>
+    <tr>
+      <th>Code</th>
+      <td><%= @project.code %></td>
+    </tr>
+    <tr>
+      <th>Decription</th>
+      <td><%= @project.description %></td>
+    </tr>
+    <tr>
+      <th>Start date</th>
+      <td><%= @project.start_date %></td>
+    </tr>
+    <tr>
+      <th>End date</th>
+      <td><%= @project.end_date %></td>
+    </tr>
+  </table>
+
+</div>
